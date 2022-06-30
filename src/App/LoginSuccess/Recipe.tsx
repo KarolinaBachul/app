@@ -22,7 +22,8 @@ const Recipe: React.FC<Props> = ({ title, picture, id }) => {
     setIsLoading(true);
     try {
       await fetch(
-        `https://cookbook-8c69d-default-rtdb.europe-west1.firebasedatabase.app/favorites/${user.uid}.json`,
+        // `https://cookbook-8c69d-default-rtdb.europe-west1.firebasedatabase.app/favorites/${user.uid}.json`,
+        `https://cookbookapp-8923f-default-rtdb.europe-west1.firebasedatabase.app/favorites/${user.uid}.json`,
         {
           method: 'POST',
           body: JSON.stringify(id),

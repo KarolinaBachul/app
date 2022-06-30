@@ -30,10 +30,10 @@ export const FavProvider: React.FC = ({ children }) => {
         return;
       }
       const res = await fetch(
-        `https://cookbook-8c69d-default-rtdb.europe-west1.firebasedatabase.app/favorites/${user.uid}.json`
+        // `https://cookbook-8c69d-default-rtdb.europe-west1.firebasedatabase.app/favorites/${user.uid}.json`
+        `https://cookbookapp-8923f-default-rtdb.europe-west1.firebasedatabase.app/favorites/${user.uid}.json`
       );
       const data = await res.json();
-      console.log(data);
       setRecipeData(data);
       if (!data) {
         setFavouriteRecipes([]);
@@ -59,11 +59,11 @@ export const FavProvider: React.FC = ({ children }) => {
 
   const removeRecipeById = async (id: string) => {
     const key = findKeyById(id);
-    console.log(key);
 
     try {
       await fetch(
-        `https://cookbook-8c69d-default-rtdb.europe-west1.firebasedatabase.app/favorites/${user.uid}/${key}.json`,
+        // `https://cookbook-8c69d-default-rtdb.europe-west1.firebasedatabase.app/favorites/${user.uid}/${key}.json`,
+        `https://cookbookapp-8923f-default-rtdb.europe-west1.firebasedatabase.app/favorites/${user.uid}/${key}.json`,
         {
           method: 'DELETE',
         }

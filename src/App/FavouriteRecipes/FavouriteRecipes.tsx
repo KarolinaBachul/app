@@ -15,7 +15,7 @@ const FavouriteRecipes: React.FC = () => {
   return (
     <div className={classes.cart}>
       <div className={classes.main}>
-        {favouriteRecipes.length > 0 && (
+        {favouriteRecipes.length >= 1 && (
           <h2 className={classes.text}>
             Welcome Back! What do you want to eat today?
           </h2>
