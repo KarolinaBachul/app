@@ -1,0 +1,25 @@
+.footer {
+  height: 5vh;
+  background-color: #b9b5b1;
+  padding-right: 70px;
+  padding-left: 70px;
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  color: #eee8e3;
+  margin-top: 10px;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: #eee8e3;
+}

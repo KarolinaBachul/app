@@ -1,0 +1,183 @@
+.picture {
+  max-height: 250px;
+  max-width: 250px;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.26);
+  text-align: center;
+  transition: all 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+.cont {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 0 20px;
+  transition: all 0.3s;
+}
+
+.cont span.text {
+  position: absolute;
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s;
+  color: rgb(253, 253, 253);
+}
+
+.cont .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+  background: black;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 90;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.26);
+}
+
+.cont:hover .overlay {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.cont:hover span.text {
+  opacity: 1;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 300;
+  color: #575452;
+  text-align: center;
+  animation: title-appear 1s ease-out forwards;
+  max-width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+}
+
+.icon {
+  color: #746d6d;
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  margin-right: 0px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.icon2 {
+  color: #aa2929;
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  margin-right: 0px;
+  margin-top: 10px;
+  position: relative;
+}
+
+@media only screen and (max-width: 400px) {
+  .picture {
+    max-height: 140px;
+    max-width: 140px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.26);
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .cont {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    margin: 0 20px;
+    transition: all 0.3s;
+    display: flex;
+  }
+
+  .cont span.text {
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s;
+    color: rgb(253, 253, 253);
+  }
+
+  .cont .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+    background: black;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 90;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.26);
+  }
+
+  .cont:hover .overlay {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  .cont:hover span.text {
+    opacity: 1;
+    z-index: 100;
+    cursor: pointer;
+  }
+
+  .title {
+    font-size: 16px;
+    font-weight: 300;
+    color: #575452;
+    text-align: center;
+    animation: title-appear 1s ease-out forwards;
+    max-width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+
+  .icon {
+    color: #746d6d;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    margin-right: 0px;
+    margin-top: 10px;
+    position: relative;
+  }
+
+  .icon2 {
+    color: #aa2929;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    margin-right: 0px;
+    margin-top: 10px;
+    position: relative;
+  }
+}

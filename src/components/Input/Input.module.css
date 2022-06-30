@@ -1,0 +1,19 @@
+.inp {
+  font: inherit;
+  display: block;
+  /* border-radius: 100px; */
+  /* border: 1px solid #ccc; */
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.inp:focus {
+  outline: none;
+  background: #eee8e3;
+}
+
+.inp_invalid {
+  border-color: red;
+  background: #f3d3d1;
+}

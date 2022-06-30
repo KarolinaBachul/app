@@ -1,0 +1,217 @@
+@media only screen and (min-width: 1300px) {
+  /* For desktop: */
+  .cart {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    animation: cart-appear 1s ease-out forwards;
+    background-color: #eee8e333;
+    margin-top: 10vh;
+  }
+
+  .control {
+    height: 42vh;
+    margin: 10vh 2vh;
+    padding: 50px 30px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.26);
+    text-align: center;
+    width: 15vw;
+    max-width: 800px;
+    background-color: white;
+  }
+
+  .control h2 {
+    font-size: 22px;
+    font-weight: 300;
+    color: #575452;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .circle1 {
+    background-color: rgb(131, 160, 125);
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+  }
+
+  .circle2 {
+    background-color: rgb(125, 146, 160);
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+  }
+
+  .circle3 {
+    background-color: rgb(160, 129, 125);
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+  }
+
+  .circle4 {
+    background-color: rgb(147, 125, 160);
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+    color: white;
+  }
+
+  .icon2 {
+    width: 50px;
+    height: 50px;
+    margin-top: 17px;
+    color: white;
+  }
+
+  .icon3 {
+    width: 65px;
+    height: 65px;
+    margin-top: 8px;
+    color: white;
+  }
+
+  .div {
+    height: 5vh;
+    background-color: #eee8e333;
+    padding-right: 70px;
+    padding-left: 70px;
+    animation: cart-appear 1s ease-out forwards;
+  }
+
+  @keyframes cart-appear {
+    from {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  /* For mobile: */
+
+  .cart {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    animation: cart-appear 1s ease-out forwards;
+    background-color: #eee8e333;
+    margin-top: 10vh;
+  }
+
+  .control {
+    height: 140%;
+    margin-top: 9px;
+    padding: 10px 5px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.26);
+    text-align: center;
+    width: 80vw;
+    max-width: 800px;
+    background-color: white;
+  }
+
+  .control h2 {
+    font-size: 18px;
+    font-weight: 300;
+    color: #575452;
+    text-align: center;
+    margin-top: 5px;
+    padding: 0 5px;
+  }
+
+  .circle1 {
+    background-color: rgb(131, 160, 125);
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+  }
+
+  .circle2 {
+    background-color: rgb(125, 146, 160);
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+  }
+
+  .circle3 {
+    background-color: rgb(160, 129, 125);
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+  }
+
+  .circle4 {
+    background-color: rgb(147, 125, 160);
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+  }
+
+  .icon {
+    width: 25px;
+    height: 25px;
+    margin-top: 8px;
+    color: white;
+  }
+
+  .icon2 {
+    width: 25px;
+    height: 25px;
+    margin-top: 8px;
+    color: white;
+  }
+
+  .icon3 {
+    width: 32px;
+    height: 32px;
+    margin-top: 4px;
+    color: white;
+  }
+
+  .div {
+    height: 5vh;
+    background-color: #eee8e333;
+    padding-right: 70px;
+    padding-left: 70px;
+    animation: cart-appear 1s ease-out forwards;
+  }
+
+  @keyframes cart-appear {
+    from {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

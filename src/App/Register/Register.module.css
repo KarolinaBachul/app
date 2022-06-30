@@ -1,0 +1,109 @@
+.cart {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: flex-start;
+  animation: cart-appear 1s ease-out forwards;
+}
+
+.control {
+  color: #eee8e3;
+  background-color: #ffffff;
+  height: 61vh;
+  margin: 12vh 5vh;
+  padding: 80px 30px;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.26);
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.control label,
+.control input {
+  display: block;
+}
+
+.text {
+  font-size: 30px;
+  font-weight: 300;
+  color: #575452;
+  text-align: center;
+  animation: title-appear 1s ease-out forwards;
+}
+
+.forgot_password_link {
+  display: block;
+  color: #83807f;
+  margin-top: 30px;
+}
+
+.login_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login_button {
+  max-width: 100%;
+  margin-top: 50px;
+}
+
+.register_button {
+  margin-top: 50px;
+}
+
+.login_input {
+  max-width: 60%;
+}
+
+.create_account_button {
+  max-width: 100%;
+  background-color: #eee8e3;
+  color: #837f7c;
+  font-size: 20px;
+}
+
+.invalid {
+  color: red;
+}
+
+@keyframes cart-appear {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .create_account_button {
+    max-width: 100%;
+    background-color: #eee8e3;
+    color: #837f7c;
+    font-size: 16px;
+  }
+
+  .control {
+    color: #eee8e3;
+    background-color: #ffffff;
+    height: 80%;
+    margin: 15vh 2vh 12vh;
+    padding: 80px 30px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.26);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .text {
+    font-size: 25px;
+  }
+}

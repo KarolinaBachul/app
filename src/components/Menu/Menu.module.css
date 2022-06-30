@@ -1,0 +1,27 @@
+@media only screen and (max-width: 400px) {
+  .modal {
+    height: 40%;
+    padding-bottom: 200px;
+    padding-right: 120px;
+  }
+  .title {
+    display: none;
+  }
+
+  .menu {
+    z-index: 100;
+    width: 40%;
+    height: 30%;
+  }
+
+  .btn {
+    width: 200px;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+}
